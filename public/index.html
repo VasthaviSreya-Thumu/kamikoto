@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="#8B4513" /> <!-- Aesthetic brown theme color -->
+    
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'wasm-unsafe-eval' 'inline-speculation-rules' https://firestore.googleapis.com https://www.google.com https://www.gstatic.com https://apis.google.com https://www.recaptcha.net;">
+    
+    <!-- Prerender status detection -->
+    <meta name="prerender-status-code" content="200">
+    
+    <!-- Performance optimization - preconnect to origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://firestore.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://i.imgur.com/" crossorigin />
+    <link rel="preconnect" href="https://www.google.com" crossorigin />
+    <link rel="preconnect" href="https://www.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://apis.google.com" crossorigin />
+    <link rel="preconnect" href="https://www.recaptcha.net" crossorigin />
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="%PUBLIC_URL%/logo192.png" as="image" />
+    
+    <!-- Bot Detection Script - Moved to external file -->
+    <script src="%PUBLIC_URL%/js/bot-detection.js"></script>
+    
+    <!-- Default Meta Tags (overridden by product-specific tags when available) -->
+    <meta
+      name="description"
+      content="your online stationery shop! We offer beautiful notebooks, pens and other writing items that will make your study and work more enjoyable."
+    />
+    <meta name="author" content="harshbanker.com" />
+    <meta
+      property="og:title" 
+      content="KamiKoto - Your Online Stationery Shop"
+      data-react-helmet="true"
+    />
+    <meta
+      property="og:description"
+      content="Visit KamiKoto for stationery items like notebooks, pens and other writing materials. Make your study and work more fun with our beautiful collection!"
+      data-react-helmet="true"
+    />
+    <meta property="og:image" content="%PUBLIC_URL%/html-banner.png" data-react-helmet="true" />
+    <meta property="og:url" content="https://kamikoto.pages.dev" data-react-helmet="true" />
+    <meta property="og:type" content="website" data-react-helmet="true" />
+
+    <meta name="twitter:card" content="summary_large_image" data-react-helmet="true" />
+    <meta
+      name="twitter:title"
+      content="KamiKoto - Your Friendly Stationery Shop" 
+      data-react-helmet="true"
+    />
+    <meta
+      name="twitter:description"
+      content="Find lovely notebooks, pens and writing items for your study and work needs!"
+      data-react-helmet="true"
+    />
+    <meta name="twitter:image" content="%PUBLIC_URL%/html-banner.png" data-react-helmet="true" />
+    
+    <!-- PWA support -->
+    <meta name="application-name" content="KamiKoto" />
+    <meta name="msapplication-TileColor" content="#8B4513" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="KamiKoto" />
+    <meta name="format-detection" content="telephone=no" />
+    
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/splash.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" crossorigin="use-credentials" />
+    <title>KamiKoto - Your Friendly Stationery Shop</title>
+    
+    <!-- Inline critical CSS to avoid render-blocking -->
+    <style>
+      /* Critical CSS for initial render */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: #f9fafb;
+      }
+      #root {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+    
+    <!-- Prerender.io support - Moved to external file -->
+    <script src="%PUBLIC_URL%/js/prerender-support.js"></script>
+  </head>
+  <body>
+    <noscript>Please enable JavaScript to use this website.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
